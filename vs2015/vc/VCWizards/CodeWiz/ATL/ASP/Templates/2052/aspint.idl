@@ -1,0 +1,15 @@
+[
+	object,
+	uuid([!output INTERFACE_IID]),
+	dual,
+	nonextensible,	
+	pointer_default(unique)
+]
+interface [!output INTERFACE_NAME] : IDispatch
+{
+[!if ON_START_PAGE]
+	//标准服务器端组件方法
+	HRESULT OnStartPage([in] IUnknown* piUnk);
+	HRESULT OnEndPage();	
+[!endif]
+};

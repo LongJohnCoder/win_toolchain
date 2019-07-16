@@ -1,0 +1,17 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312"/>
+<TITLE>对象 [!output SHORT_NAME] 的 ATL 测试页</TITLE>
+</HEAD>
+<BODY>
+
+
+[!if !DEVICE]
+<OBJECT ID="[!output SHORT_NAME]" CLASSID="CLSID:[!output CLSID_REGISTRY_FORMAT]"></OBJECT>
+[!else]
+<OBJECT ID="[!output SHORT_NAME]" CLASSID="CLSID:[!output CLSID_REGISTRY_FORMAT]" width="240" height="240"></OBJECT>
+[!endif]
+
+
+</BODY>
+</HTML>
